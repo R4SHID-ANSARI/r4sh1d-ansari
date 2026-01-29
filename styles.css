@@ -1,0 +1,130 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-bottom: 40px;
+}
+
+/* TITLE */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    color: red;
+    font-size: 48px;
+    letter-spacing: 4px;
+}
+
+/* TABS */
+.tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    padding: 10px;
+}
+
+.tabs a {
+    color: white;
+    margin: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tabs a:hover {
+    text-decoration: underline;
+}
+
+/* PHOTO SECTION */
+.photo-section {
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+}
+
+.photo-box {
+    margin: 15px auto;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 2px dashed #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTENT SECTIONS */
+.content {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button:hover,
+.support a:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+.content h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* SOCIAL LINKS */
+.content ul {
+    list-style: none;
+}
+
+.content ul li a {
+    color: blue;
+    text-decoration: none;
+}
+
+.content ul li a:hover {
+    text-decoration: underline;
+}
+
+/* SUPPORT LINK */
+.support {
+    text-align: center;
+    margin: 20px;
+}
+
+.support a {
+    background-color: grey;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.support a:hover {
+    background-color: #555;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
